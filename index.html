@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Specificity</title>
+
+  <style>
+    .paragraph {
+      color: orange;
+    }
+
+    /* The more classes we select, the higher the specificity */
+    .paragraph.green {
+      color: green;
+    } 
+    .paragraph.green.red {
+      color: red;
+    }
+    /* uncomment this to see what happens 
+    .paragraph.green.red {
+      color: red;
+    } 
+    */
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <p id="paragraph" class="paragraph green red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, harum.</p>
+  </div>
+</body>
+</html>
